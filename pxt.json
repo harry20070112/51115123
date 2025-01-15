@@ -1,5 +1,6 @@
 {
     "name": "比賽的範例檔案（51115123)",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
