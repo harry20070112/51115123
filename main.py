@@ -1,7 +1,7 @@
 標記線計數 = 0
 總標記線數量 = 14
 基礎速度 = 200
-kp = 260
+kp = 250
 kd = 210
 紅外線IR1 = 0
 紅外線IR2 = 0
@@ -36,7 +36,7 @@ def 設定PID控制器(基礎速度2: number, kp2: number, kd2: number):
 # 偵測標記線的函式
 def 判斷標記線():
     global 標記線計數
-    if (紅外線IR1 > 1000) or (紅外線IR5 > 1000):
+    if 紅外線IR1 > 1000 or 紅外線IR5 > 1000:
         basic.pause(50)
         標記線計數 += 1
         # basic.showNumber(標記線計數); // 顯示當前標記線數量
